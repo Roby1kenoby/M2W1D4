@@ -97,7 +97,7 @@ I tipi primitivi (elementi base su cui si possono appoggiare tutta una serie di 
     
     // lo so che non era il caso di fare una funzione, ma mentre c'ero mi sono impegnato.
     function checkNames(n1, n2){
-        if(n1 != n2){
+        if(n1 !== n2){
             console.log(`I due nomi (${n1} e ${n2}) sono differenti`)
         }
         else{
