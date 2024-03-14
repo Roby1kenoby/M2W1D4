@@ -80,7 +80,8 @@ I tipi primitivi (elementi base su cui si possono appoggiare tutta una serie di 
     console.log("la differenza tra 4 e x è " + (4-x))
 
     // oppure usare delle variabili
-    let result = 4 - x
+    const fixedValue = 4
+    let result = fixedValue - x
     console.log(`la differenza tra 4 e x, messa in una variabile, è ${result}`)
 
 /* ESERCIZIO 7
@@ -104,17 +105,17 @@ I tipi primitivi (elementi base su cui si possono appoggiare tutta una serie di 
         }
     }
 
-    // stessa funzione ma su una sola riga
+    // stessa funzione ma su una sola riga e con condizione di uguaglianza al posto che di disuguaglianza
     function checkNames2(n1,n2){
-        return n1 =! n2 ? console.log(`I due nomi (${n1} e ${n2}) sono differenti`) : console.log(`I due nomi (${n1} e ${n2}) sono identici`)
+        return n1 === n2 ? console.log(`I due nomi (${n1} e ${n2}) sono identici`) : console.log(`I due nomi (${n1} e ${n2}) sono differenti`)
     }
 
 
     // controllo pre lowercase
-    checkNames(name1, name2)
+    checkNames2(name1, name2)
 
     // controllo con lowercase
-    checkNames(name1.toLowerCase(), name2.toLowerCase())
+    checkNames2(name1.toLowerCase(), name2.toLowerCase())
     
 
 
